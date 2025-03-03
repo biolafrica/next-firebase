@@ -70,7 +70,7 @@ export default function AuthForm({form = "signin"}){
       {errorMessage && <div className="error">{errorMessage}</div>}
 
 
-      <button type="submit">
+      <button type="submit" className="btn-primary">
         {form ==="signin" ? <span>Sign In</span> :<span>Sign up</span>}
       </button>
 
