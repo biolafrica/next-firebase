@@ -14,6 +14,7 @@ export default function AuthForm({form = "signin"}){
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
+    setErrorMessage("")
     if(form === "signin"){
 
       const { result, error } = await signIn(email, password);
